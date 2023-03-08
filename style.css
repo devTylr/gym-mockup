@@ -1,0 +1,98 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.2rem;
+}
+
+nav img {
+    height: 10rem;
+    width: 10rem;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.1rem;
+}
+
+.welcome {
+    background: url(https://images.unsplash.com/photo-1637666067348-7303e7007363?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.welcome h1 {
+    margin: 0;
+    font-size: 4rem;
+    text-shadow: 0px 0px 7px rgb(0, 0, 0);
+}
+
+.welcome p {
+    font-size: 1.6rem;
+    text-shadow: 0px 0px 7px rgb(0, 0, 0);
+}
+
+.quotes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.person {
+    margin: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 350px;
+    min-height: 600px;
+    min-width: 350px;
+}
+
+.person h2 {
+    font-size: 1.8rem;
+}
+
+.quotes img {
+    margin: 2rem;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+}
+
+.quote {
+    font-size: 1.2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(237, 237, 237);
+    font-size: 1.1rem;
+}
