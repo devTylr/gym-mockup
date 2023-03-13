@@ -42,6 +42,7 @@ nav img {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    padding: 25px;
 }
 
 .welcome h1 {
@@ -56,29 +57,14 @@ nav img {
 }
 
 .quotes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.person {
-    margin: 2rem 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 20px 0 0 0;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     text-align: center;
-    max-width: 350px;
-    min-height: 600px;
-    min-width: 350px;
-}
-
-.person h2 {
-    font-size: 1.8rem;
 }
 
 .quotes img {
-    margin: 2rem;
     height: 12rem;
     width: 12rem;
     border-radius: 50%;
@@ -86,6 +72,14 @@ nav img {
 
 .quote {
     font-size: 1.2rem;
+    padding: 50px;
+    margin: 0;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer {
@@ -95,4 +89,18 @@ footer {
     height: 100px;
     background-color: rgb(237, 237, 237);
     font-size: 1.1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .navigation {
+        font-size: .9rem;
+        gap: 15px;
+    }
+    .welcome h1 {
+        font-size: 3rem;
+    }
+    nav img {
+        height: 7rem;
+        width: 7rem;
+    }
 }
